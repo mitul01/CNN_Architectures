@@ -8,9 +8,9 @@ It was created for students to practise their skills in creating models for imag
 
 ## Arch 1 :- LeNet 
 ### About 
-LeNet-5, from the paper Gradient-Based Learning Applied to Document Recognition, is a very efficient convolutional neural network for handwritten character recognition. <br>
+LeNet-5, from the paper <b>Gradient-Based Learning Applied to Document Recognition</b>, is a very efficient convolutional neural network for handwritten character recognition. <br>
 Paper: Gradient-Based Learning Applied to Document Recognition <br>
-Authors: Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner <br>
+Authors: <b>Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner</b> <br>
 Published in: Proceedings of the IEEE (1998) <br> 
 
 ### Imp Points 
