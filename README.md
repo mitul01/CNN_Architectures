@@ -43,8 +43,8 @@ Author:<b> Alex Krizhevsky,Ilya Sutskever and Geoffrey Hinton</b> <br>
 
 ## Arch 3 :- VGG
 ### About 
-VGG is the Visual Geometry Group from Oxford University.The original purpose of VGG's research on the depth of convolutional networks is to understand how the depth of convolutional networks affects the accuracy of large-scale image classification and recognition. 
-Paper: Very Deep Convolutional Networks for Large-Scale Image Recognition <br> 
+VGG is the Visual Geometry Group from Oxford University.The original purpose of VGG's research on the depth of convolutional networks is to understand how the depth of convolutional networks affects the accuracy of large-scale image classification and recognition. <br>
+Paper: <a href="https://arxiv.org/pdf/1409.1556.pdf">Very Deep Convolutional Networks for Large-Scale Image Recognition</a> <br> 
 Author:<b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
 
 ### Imp Points 
@@ -56,11 +56,11 @@ Author:<b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
 6) Arch:-
 <img src="vgg.png" width="1000px" height="500px">
 
-## Arch 3 :- Resnet 
+## Arch 4 :- Resnet 
 ### About 
 
 <br> 
-Paper: <a href="https://arxiv.org/pdf/1512.03385.pdf">Deep Residual Learning for Image Recognition</a>
+Paper: <a href="https://arxiv.org/pdf/1512.03385.pdf">Deep Residual Learning for Image Recognition</a><br>
 Author:<b>He Kaiming, Sun Jian and others of Microsoft Research Asia</b> <br>
 
 ### Imp Points 
