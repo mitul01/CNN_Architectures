@@ -20,7 +20,7 @@ Published in: Proceedings of the IEEE (1998) <br>
 3) A kernel used in convolution layer would extract features out of input images via the concept called edge detection. Earlier these kernels were hard coded but use of Neural Network allowed these kernels to be made of trainable weights that could adjust themselves by the concept of backpropogation. 
 4) No.of kernel used in LeNet were 6 in 1st layer and 16 in 2nd layer. More the number of kernels (or filters) more amount of features extracted in a layer.
 5) Architecture :- 
-<img src="" width="1000px" height="500px">
+<img src="alexnet-2.png" width="1000px" height="500px">
 
 ## Arch 2 :- AlexNet
 ### About 
