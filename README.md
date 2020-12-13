@@ -24,7 +24,7 @@ Published in: Proceedings of the IEEE (1998) <br>
 
 ## Arch 2 :- AlexNet
 ### About 
-The motivation behind AlexNet was going depper in convolution layers. Increase in no.of convolution layers meant extracting minor details in image aka extracting "features of features". But going deeper meant requirement of large no.of trainable parameters demanding more computation power. AlexNet proposed various measures to overcome these limitations in 2012 ImageNet Competition. 
+The motivation behind AlexNet was going depper in convolution layers. Increase in no.of convolution layers meant extracting minor details in image aka extracting "features of features". But going deeper meant requirement of large no.of trainable parameters demanding more computation power. AlexNet proposed various measures to overcome these limitations in 2012 ImageNet Competition. <br> 
 Author:<b> Alex Krizhevsky,Ilya Sutskever and Geoffrey Hinton</b> <br>
 
 ### Imp Points 
@@ -38,5 +38,20 @@ Author:<b> Alex Krizhevsky,Ilya Sutskever and Geoffrey Hinton</b> <br>
       
 5) Use of Data augmentation- artificially increase the size of the training set-create a batch of "new" data from existing data by means of translation, flipping, noise.
 
+6) Arch:-
+<img src="" width="1000px" height="500px">
+
+## Arch 3 :- VGG
+### About 
+VGG is the Visual Geometry Group from Oxford University.The original purpose of VGG's research on the depth of convolutional networks is to understand how the depth of convolutional networks affects the accuracy of large-scale image classification and recognition. 
+Paper: Very Deep Convolutional Networks for Large-Scale Image Recognition <br> 
+Author:<b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
+
+### Imp Points 
+1) A smaller 3 * 3 convolution kernel and a deeper network are used.The stack of two 3 * 3 convolution kernels is relative to the field of view of a 5 * 5 convolution kernel, and the stack of three 3 * 3 convolution kernels is equivalent to the field of view of a 7 * 7 convolution kernel. In this way, there can be fewer parameters (3 stacked 3 * 3 kernel have only 3*3*3=27 parameters whereas single 7 * 7 fitler has 49 paramters ( about 55% less in 3*3*3);on the other hand, they have more The non-linear transformation thereby increasing the ability of CNN to learn features.
+2) One of the most symmetrical architecture in CNN. 3x3 Conv layers stacked on top of each other with increasing no.of filters in multiple of 2 starting from 64. After every two or three conv layers the output is maxpooled. 
+3) Input is bit different in VGG: The input of VGG is set to an RGB image of 224x244 size. The average RGB value is calculated for all images on the training set,and then the image is given as input to VGG.
+4) Although it is deeper and has more parameters than the AlexNet network, VGGNet can converge in less cycles for two reasons: one, the greater depth and smaller convolutions bring implicit regularization ; Second, some layers of pre-training.
+5) The optimization method is a stochastic gradient descent SGD + momentum (0.9) with momentum. The batch size is 256.
 6) Arch:-
 <img src="" width="1000px" height="500px">
