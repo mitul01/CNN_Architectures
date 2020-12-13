@@ -19,18 +19,19 @@ Published in: Proceedings of the IEEE (1998) <br>
    Activation function used originally - Sigmoid 
 3) A kernel used in convolution layer would extract features out of input images via the concept called edge detection. Earlier these kernels were hard coded but use of Neural Network allowed these kernels to be made of trainable weights that could adjust themselves by the concept of backpropogation. 
 4) No.of kernel used in LeNet were 6 in 1st layer and 16 in 2nd layer. More the number of kernels (or filters) more amount of features extracted in a layer.
-5) Architecture :- <img src="" width="200px" height="100px">
+5) Architecture :- 
+<img src="" width="200px" height="100px">
 
 ## Arch 2 :- AlexNet
 ### About 
-LeNet-5, from the paper Gradient-Based Learning Applied to Document Recognition, is a very efficient convolutional neural network for handwritten character recognition.
-Paper: Gradient-Based Learning Applied to Document Recognition
-Authors: Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner
-Published in: Proceedings of the IEEE (1998)
+The motivation behind AlexNet was going depper in convolution layers. Increase in no.of convolution layers meant extracting minor details in image aka extracting "features of features". But going deeper meant requirement of large no.of trainable parameters demanding more computation power. AlexNet proposed various measures to overcome these limitations in 2012 ImageNet Competition. 
+Author:<b> Alex Krizhevsky,Ilya Sutskever and Geoffrey Hinton</b> <br>
 
 ### Imp Points 
-1) 
-2) 
-3) 
-4) 
+1) Large amount of filters used in conv layers ranging from 96 to 384.
+2) 5 conv layers used with filter varying from 3x3 , 5x5 and 11x11. 
+3) Earlier average pooling was being used which was a trainable layer. In AlexNet MaxPooling was introduced thereby making pooling layer a non-trainable layer reducing parameters to train. 
+4) Several new small concepts were used for the first time in CNN which helped in increasing the depth of architecture like:
+      <li> Use of ReLu Activation function </li>
+      
 5) 
