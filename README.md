@@ -15,10 +15,11 @@ Published in: Proceedings of the IEEE (1998) <br>
 
 ### Imp Points 
 1) First ever implementation of backpropogation in Convolution Neural Network. 
-2) Use of 5x5 Kernels with stride=1 in Convolution layer and 2x2 kernel in Average Pooling layer with stride=2.
-3) 
-4) 
-5) 
+2) Use of 5x5 Kernels with stride=1 in Convolution layer and 2x2 kernel with stride=2 in Average Pooling layer. <br> 
+   Activation function used originally - Sigmoid 
+3) A kernel used in convolution layer would extract features out of input images via the concept called edge detection. Earlier these kernels were hard coded but use of Neural Network allowed these kernels to be made of trainable weights that could adjust themselves by the concept of backpropogation. 
+4) No.of kernel used in LeNet were 6 in 1st layer and 16 in 2nd layer. More the number of kernels (or filters) more amount of features extracted in a layer.
+5) Architecture :- <img src="" width="200px" height="100px">
 
 ## Arch 2 :- AlexNet
 ### About 
