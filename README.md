@@ -20,7 +20,7 @@ Published in: Proceedings of the IEEE (1998) <br>
 3) A kernel used in convolution layer would extract features out of input images via the concept called edge detection. Earlier these kernels were hard coded but use of Neural Network allowed these kernels to be made of trainable weights that could adjust themselves by the concept of backpropogation. 
 4) No.of kernel used in LeNet were 6 in 1st layer and 16 in 2nd layer. More the number of kernels (or filters) more amount of features extracted in a layer.
 5) Architecture :- 
-<img src="alexnet2.png" width="1000px" height="500px">
+<img src="lenet-5.png" width="1000px" height="500px">
 
 ## Arch 2 :- AlexNet
 ### About 
@@ -39,7 +39,7 @@ Author:<b> Alex Krizhevsky,Ilya Sutskever and Geoffrey Hinton</b> <br>
 5) Use of Data augmentation- artificially increase the size of the training set-create a batch of "new" data from existing data by means of translation, flipping, noise.
 
 6) Arch:-
-<img src="https://github.com/mitul01/CNN_Architectures/blob/main/alexnet2.png" width="1000px" height="500px">
+<img src="alexnet2.png" width="1000px" height="500px">
 
 ## Arch 3 :- VGG
 ### About 
@@ -54,4 +54,4 @@ Author:<b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
 4) Although it is deeper and has more parameters than the AlexNet network, VGGNet can converge in less cycles for two reasons: one, the greater depth and smaller convolutions bring implicit regularization ; Second, some layers of pre-training.
 5) The optimization method is a stochastic gradient descent SGD + momentum (0.9) with momentum. The batch size is 256.
 6) Arch:-
-<img src="" width="1000px" height="500px">
+<img src="vgg.png" width="1000px" height="500px">
