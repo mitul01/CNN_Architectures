@@ -14,8 +14,8 @@ Authors: <b>Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner</b> <br
 Published in: Proceedings of the IEEE (1998) <br> 
 
 ### Imp Points 
-1) 
-2) 
+1) First ever implementation of backpropogation in Convolution Neural Network. 
+2) Use of 5x5 Kernels with stride=1 in Convolution layer and 2x2 kernel in Average Pooling layer with stride=2.
 3) 
 4) 
 5) 
