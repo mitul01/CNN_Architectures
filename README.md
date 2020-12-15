@@ -1,10 +1,17 @@
-# CNN_Architectures
-This repository contains all the famous CNN networks and compares them on tiny imagenet dataset. 
+# How to use this repository
+This repository containts all famous CNN blocks like VGG Block , residual block , inception modules etc implemented in keras. Blocks are constructed in a function so that one can simply write a function call and construct a CNN block. Various CNN blocks can be sequentially joined with one another to construct an entire architecture. Implementation of popular architectures like VGG16 , ResNet-50 , Inception-v4 are already present in the repository. One can also create there own architecture by stacking varoius CNN blocks and have fun while learning 😉. 
 
-### About Dataset
-How many classes are there in ImageNet?
-200 classes
-It was created for students to practise their skills in creating models for image classification. The Tiny ImageNet dataset has 100,000 images across 200 classes. Each class has 500 training images, 50 validation images, and 50 test images.
+# Why this repository?
+It is sometimes difficult to understand how such deeper networks like inception-v4 or resnets are implemented. Most of the times we simple load a pre-trained model available in keras which is good for practical implementation but hinders the educational process. Using this repository one can understand in depth how each and every block of CNN architecture is implemented and how these blocks are stacked together to form a large network. One can also use this repository to create new architectures using various CNN blocks present. If these blocks are not enough, one can create new cnn blocks in a similar fashion as given in this repository. 
+
+# Contents of this repository 
+1. cnn_blocks.py --> Implementation of VGG_block , Inception_v1,v2,v3.v4 , inception reduction blocks , Resnet blocks , incpetion-residual block
+2. LeNet.py --> Implementation of LeNet on mnist dataset 
+3. AlexNet.py --> Implementation of AlexNet on cifar10 dataset 
+4. VGG.py --> Construction of entire VGG architecture using VGG blocks 
+5. Inception-v4 --> Construction of entire VGG architecture using VGG blocks 
+6. ResNet.py --> Construction of entire VGG architecture using VGG blocks 
+
 
 ## Arch 1 :- LeNet 
 ### About 
