@@ -102,7 +102,7 @@ Theoritically accuracy of the CNN should increase as we add more layers but that
 <br> 
 Paper: <a href="https://arxiv.org/pdf/1512.03385.pdf">Deep Residual Learning for Image Recognition</a><br>
 Author:<b>He Kaiming, Sun Jian and others of Microsoft Research Asia</b> <br>
-Arch: <br> <img src="img/resnet.png" width="500px" height="2500px" align="centre"> <br> 
+Arch: <br> <img src="img/resnet.png" width="500px" height="2500px" align="center"> <br> 
 ### Imp Points 
 1) The accuracy degradation problem is not a problem of the network structure itself, but is caused by the current insufficient training methods. The currently widely used training methods, whether it is SGD, AdaGrad, or RMSProp, cannot reach the theoretically optimal convergence result after the network depth becomes larger.
 2) Introduction of skip networks in VGG. Output of every VGG block changed from f(x) to f(x)+x , where x was output of previous layer. 
