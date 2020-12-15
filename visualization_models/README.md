@@ -5,4 +5,4 @@
  --> Inception-v4 <br>
  --> Resnet 50  <br> 
 <br>
-## Visualization of constructed architectures can be done using: <a href="https://netron.app/" target="_blank"> Netron Web App </a>
+## Visualization of constructed architectures can be done using: <a href="https://netron.app/" target="blank"> Netron Web App </a>
