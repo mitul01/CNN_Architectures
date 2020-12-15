@@ -68,7 +68,7 @@ Author: <b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
 ## Arch 4 :- Inception and GoogLeNet 
 ### About 
 One thought which should occur by now in our heads is what if we increase neural network's width rather than it's depth? Inception net is based on the former thought only. It proposes 4 parallel channel coming out from previous layer which are concatenated and act as input for the next layer. Several improvements have been made in Inception net since the day it was proposed. Now-a-days inception net is implemented along with Resnets which make a very powerfull architecture. The Original inception net architecture is also called as GoogLeNet. Here is a pic of GoogleNet:- <br> 
-<img src="img/googlenet.png" width="1000px" height="500px">
+<img src="img/googLeNet.png" width="1000px" height="500px">
 <br> 
 Paper: <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43022.pdf"> Going Deeper with Convolutions </a><br>
 Author:<b> Google Researchers </b><br>
