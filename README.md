@@ -9,8 +9,8 @@ It is sometimes difficult to understand how such deeper networks like inception-
 2. LeNet.py --> Implementation of LeNet on mnist dataset 
 3. AlexNet.py --> Implementation of AlexNet on cifar10 dataset 
 4. VGG.py --> Construction of entire VGG architecture using VGG blocks 
-5. Inception-v4 --> Construction of entire VGG architecture using VGG blocks 
-6. ResNet.py --> Construction of entire VGG architecture using VGG blocks 
+5. Inception-v4 --> Construction of entire inception-v4 architecture using inception blocks 
+6. ResNet.py --> Construction of entire resnet-50 architecture using residual blocks 
 
 # Summary of all Architecture Implemented 
 
@@ -40,7 +40,7 @@ Neural Networks </a>
 1) Large amount of filters used in conv layers ranging from 96 to 384.
 2) 5 conv layers used with filter varying from 3x3 , 5x5 and 11x11. 
 3) Earlier average pooling was being used which was a trainable layer. In AlexNet MaxPooling was introduced thereby making pooling layer a non-trainable layer reducing parameters to train. 
-4) Several new small concepts were used for the first time in CNN which helped in increasing the depth of architecture like:
+4) Several new small concepts were used for the first time in CNN which helped in increasing the depth of architecture like:<br>
       --> Use of ReLu Activation function <br>
       --> Use of Local Response Normalization becuase the output of ReLu is unbounded in nature. <br>
       --> Concept of Dropout in Fully connected layers  to drop some neurons so as to prevent overfitting. ( Concept of deactivating neurons ) <br>
@@ -90,11 +90,11 @@ Author:<b> Google Researchers </b><br>
   
 <b> Important Note: Use of 1x1x16 layer is heavily used in modern architecture. One might think that we are actually reducing the no.of features by the use of these layers which may decrease the quality of neural network which is practically a right thought. But actually such a reduction can be classified as a low-loss compression. Even though features are lost during this compression but a strong correlation still exist between features which can be used to restore the original information as we apply more and more conv layers. </b> <br>  
 5) New concepts introduced in Inception V4:- <br>
-                 --> Implemented with Resnet models. A skip connection added in several new ways in inception block
-<br> 
+                 --> Implemented with Resnet models. A skip connection added in several new ways in inception block <br> 
+
 Various Inception Modules: <br>
-<img src="img/v4.png" width="1000px" height="500px">
- <br>
+<img src="img/v4.png" width="1000px" height="500px"><br>
+
 ## Arch 5 :- Resnet 
 ### About 
 Theoritically accuracy of the CNN should increase as we add more layers but that is not the case though. Accuracy appears to degrade as we increase the depth. This is called the problem of accuracy degradation. Another problem that arises from increasing depth is gradient dispersion. Reason for accuracy degradation seems unsolvable but gradient dispersion occurs due to excessive backpropogration. This is because as the number of layers increases, the gradient of backpropagation in the network will become unstable with continuous multiplication, and become particularly large or small. Gradient dispersion problem is easily solved by introduction of Batch Normalization in CNN. Problem of accuracy degradtion can be considered as problem of overthinking in humans. By introducing residual connections in CNN this problem is solved by ResNet.  
@@ -105,7 +105,9 @@ Author:<b>He Kaiming, Sun Jian and others of Microsoft Research Asia</b> <br>
 ### Imp Points 
 1) The accuracy degradation problem is not a problem of the network structure itself, but is caused by the current insufficient training methods. The currently widely used training methods, whether it is SGD, AdaGrad, or RMSProp, cannot reach the theoretically optimal convergence result after the network depth becomes larger.
 2) Introduction of skip networks in VGG. Output of every VGG block changed from f(x) to f(x)+x , where x was output of previous layer. 
-<img src="img/resnet.png" width="500px" height="250px">
-3) 
-4) 
-5) Arch:-
+3) Activation function 'ReLu' used after every residual block
+4) Arch: <br> <img src="img/resnet.png" width="500px" height="2500px">
+
+Inception-Residual mixed: 
+<img src="img/res2in.png" width="1000px" height="500px">
+
