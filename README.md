@@ -67,7 +67,8 @@ Author: <b>K. Simonyan and A. Zisserman from the University of Oxford</b> <br>
 
 ## Arch 4 :- Inception and GoogLeNet 
 ### About 
-One thought which should occur by now in our heads is what if we increase neural network's width rather than it's depth? Inception net is based on the former thought only. It proposes 4 parallel channel coming out from previous layer which are concatenated and act as input for the next layer. Several improvements have been made in Inception net since the day it was proposed. Now-a-days inception net is implemented along with Resnets which make a very powerfull architecture. The Original inception net architecture is also called as GoogLeNet. Here is a pic of GoogleNet:- <br> 
+One thought which should occur by now in our heads is what if we increase neural network's width rather than it's depth? Inception net is based on the former thought only. It proposes 4 parallel channel coming out from previous layer which are concatenated and act as input for the next layer. Several improvements have been made in Inception net since the day it was proposed. Now-a-days inception net is implemented along with Resnets which make a very powerfull architecture. The Original inception net architecture is also called as GoogLeNet.  
+<br> 
 <img src="img/googLeNet.jpeg" width="1000px" height="500px">
 <br> 
 Paper: <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43022.pdf"> Going Deeper with Convolutions </a><br>
@@ -101,13 +102,12 @@ Theoritically accuracy of the CNN should increase as we add more layers but that
 <br> 
 Paper: <a href="https://arxiv.org/pdf/1512.03385.pdf">Deep Residual Learning for Image Recognition</a><br>
 Author:<b>He Kaiming, Sun Jian and others of Microsoft Research Asia</b> <br>
-
+Arch: <br> <img src="img/resnet.png" width="500px" height="2500px" align="centre"> <br> 
 ### Imp Points 
 1) The accuracy degradation problem is not a problem of the network structure itself, but is caused by the current insufficient training methods. The currently widely used training methods, whether it is SGD, AdaGrad, or RMSProp, cannot reach the theoretically optimal convergence result after the network depth becomes larger.
 2) Introduction of skip networks in VGG. Output of every VGG block changed from f(x) to f(x)+x , where x was output of previous layer. 
 3) Activation function 'ReLu' used after every residual block
-4) Arch: <br> <img src="img/resnet.png" width="500px" height="2500px">
 
-Inception-Residual mixed: 
+Inception-Residual mixed: <br>
 <img src="img/res2in.png" width="1000px" height="500px">
 
