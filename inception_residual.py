@@ -99,7 +99,7 @@ BATCH_SIZE=128
 classifier=model_inception_v4.fit(X_train,Y_train,epochs=EPOCHS,batch_size=BATCH_SIZE,verbose=1,validation_data=(X_test,Y_test)inception_v4
 """
 
-model_inception_residual.save("F:/Data Science/Deep learning/CNN arch/visualization_models/model_inception_residual.h5",save_format='h5')
+model_inception_residual.save("your_model_path/model_inception_residual.h5",save_format='h5')
 
 
 
