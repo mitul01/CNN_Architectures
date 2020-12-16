@@ -9,12 +9,12 @@ from cnn_blocks import inception_block_reduction_A,inception_block_reduction_B
 from cnn_blocks import residual_block_v2
 ```
 <br>
-- If you can't find the required cnn block try to create your own in a similar fashion as in cnn_blocks.py
-- Define input tensor. Note if input shape is less , you may want to decrease the no.of filters , kernel size or strides.
+- If you can't find the required cnn block try to create your own in a similar fashion as in cnn_blocks.py. <br> 
+- Define input tensor. Note if input shape is less , you may want to decrease the no.of filters , kernel size or strides.<br> 
 ```python
 input=Input(shape=(264,264,3))
 ```
-- Stack the blocks squentially or parallely and make use of add and concatenate etc. 
+- Stack the blocks squentially or parallely and make use of add and concatenate etc. <br> 
 Example:- <br>
 ```python
 branch1_1=inception_residual_block_A(input)
@@ -24,7 +24,7 @@ pool1=AveragePooling2D()(branch1_3)
 fc1=Dense(1024,activation='relu')(pool1)
 output1=Dense(n_classes,activation='softmax')(fc1)
 ```
-- Define Model object and pass input and outputs 
+- Define Model object and pass input and outputs <br> 
 ```python
 model=Model(inputs=input,outputs=output1)
 ```
