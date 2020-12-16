@@ -18,7 +18,8 @@ Example:- <br>
 ```python
 import numpy as np
 from keras import layers
-from keras.layers import Input, Add,Dense, Activation, ZeroPadding2D, BatchNormalization, Flatten, Conv2D, AveragePooling2D, MaxPooling2D,Dropout
+from keras.layers import Input, Add, Dense, Activation, Flatten, Conv2D
+from keras.layers import Input, ZeroPadding2D, BatchNormalization,  AveragePooling2D, MaxPooling2D, Dropout
 from keras.models import Model
 from keras.layers.merge import concatenate,add
 
@@ -33,3 +34,12 @@ output1=Dense(n_classes,activation='softmax')(fc1)
 ```python
 model=Model(inputs=input,outputs=output1)
 ```
+- Compile and save the model 
+```python
+model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
+model.save("your_file_path/MyOwnArchitecture.h5",save_format='h5')
+```
+<br> 
+Here is an picture of an architecture that I created: <br> 
+<img src="MyOwnArchitecture.svg" width="1000px" height="5000px" align="center">
+
