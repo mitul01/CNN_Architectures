@@ -41,6 +41,7 @@ model.save("your_file_path/MyOwnArchitecture.h5",save_format='h5')
 ```
 <br> 
 Here is an picture of an architecture that I created: <br> 
+<br> 
 <p align="center">
-<img src="MyOwnArchitecture.svg" width="500px" height="5000px">
+<img src="MyOwnArchitecture.svg" width="700px" height="5000px">
 </p>
