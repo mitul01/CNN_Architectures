@@ -16,6 +16,12 @@ input=Input(shape=(264,264,3))
 - Stack the blocks squentially or parallely and make use of add and concatenate etc. <br> 
 Example:- <br>
 ```python
+import numpy as np
+from keras import layers
+from keras.layers import Input, Add,Dense, Activation, ZeroPadding2D, BatchNormalization, Flatten, Conv2D, AveragePooling2D, MaxPooling2D,Dropout
+from keras.models import Model
+from keras.layers.merge import concatenate,add
+
 branch1_1=inception_residual_block_A(input)
 branch1_2=inception_residual_block_A(branch1_1)
 branch1_3=inception_residual_block_A(branch1_2)
