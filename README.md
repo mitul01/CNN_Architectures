@@ -5,7 +5,7 @@ This repository containts all famous CNN blocks like VGG Block , residual block 
 It is sometimes difficult to understand how such deeper networks like inception-v4 or resnets are implemented. Most of the times we simple load a pre-trained model available in keras which is good for practical implementation but hinders the educational process. Using this repository one can understand in depth how each and every block of CNN architecture is implemented and how these blocks are stacked together to form a large network. One can also use this repository to create new architectures using various CNN blocks present. If these blocks are not enough, one can create new cnn blocks in a similar fashion as given in this repository. 
 
 # Contents of this repository 
-1. cnn_blocks.py --> Implementation of VGG_block , Inception_v1,v2,v3.v4 , inception reduction blocks , Resnet blocks , incpetion-residual block
+1. cnn_blocks.py --> Implementation of VGG_block , Inception naive,block A,block B,block C , inception reduction blocks , Resnet blocks , incpetion-residual block
 2. LeNet.py --> Implementation of LeNet on mnist dataset 
 3. AlexNet.py --> Implementation of AlexNet on cifar10 dataset 
 4. VGG.py --> Construction of entire VGG architecture using VGG blocks 
